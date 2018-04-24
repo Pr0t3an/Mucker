@@ -90,7 +90,7 @@ def test2():
 
 
 def base64gzip():
-    coded_string="H4sIAJCntloA/11Sy27VMBDd+ytm10QKH8ECQcQCCZAqlr7xxLbieIwfrcLX9zi5LYVNlDmZ85hz789noRRaoYoXX2iVlifafQQkkak6XR/w1WXmiX43v2y06+qK+vTE+TD6wBixIRFLTLcgyzZR2WUDGaSifjDTAVmyPgfy117SGWtd/Q4X0tSWjXNRj46vpeqjpWeOFcZ62T68e05dslvje2YyoPbl4RXtAJtRfZFgoGNdnehjiYgy7AfdssB6nMgxolupV6a2p4OGm7en879ksLpuZ9t2/E9dsy83ZjXjZp1w2NvztZjkUCdk5MnHh+vwRXJcg97Q0Xe/MH2FSPJcoP1m3H17QRM9Ol8jIx+Qz6P6dslm0YaMnJq9Nen04FE+1vpEw/tpVL/uBVUnrevPyC5/kGymgnY0JUaPlyUMIvAkBbUtzgfYjGpeqcBZY6j9Oo92ZrJOCl6cdvAX2QgHnr96vLMZ/5y/wKr3K4uR2MA7wSCwPuNanQ28ockvA0z1rqICAAA=="
+    coded_string="AA=="
     decoded_string = base64.b64decode(coded_string)
     decompressed_data=zlib.decompress(decoded_string, 16+zlib.MAX_WBITS)
     print decompressed_data
